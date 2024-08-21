@@ -29,6 +29,7 @@
                 services: 'rgb(115, 115, 115)',
                 cart: 'rgb(233, 233, 233)',
                 cartText: 'rgb(115, 115, 115)',
+                view: 'rgba(171, 239, 95, 0.5)',
 
               },
               fontFamily: {
@@ -42,7 +43,7 @@
 <body class="font-Manrope py-10">
     <!-- Nav Style Start -->
      <nav class="w-11/12 mx-auto">
-        <div class="navbar bg-base-100">
+        <div class="navbar">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -62,19 +63,15 @@
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
+                  <li class="text-home"><a>Home</a></li>
+                <li class="text-services"><a>Services</a></li>
+                <li class="text-services"><a>Portfolio</a></li>
+                <li class="text-services"><a>Blogs</a></li>
+                <li class="text-services"><a>Contact Us</a></li>
                 </ul>
               </div>
               <i class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full py-2 px-2"></i>
-              <a class="btn btn-ghost text-2xl font-extrabold">Rinterio</a>
+              <a class=" pl-4 text-2xl font-extrabold">Rinterio</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-lg font-extrabold">
@@ -86,7 +83,7 @@
                 
               </ul>
             </div>
-            <div class="navbar-end gap-4">
+            <div class="navbar-end gap-4 ">
                 <i class="fa-solid fa-magnifying-glass bg-cart px-3 py-3 text-cartText rounded-full"></i>
                 <i class="fa-solid fa-cart-shopping bg-cart px-3 py-3 text-cartText rounded-full"></i>
               <a class="btn bg-primary font-extrabold text-lg rounded-3xl">Book Consult
@@ -96,5 +93,78 @@
             </div>
           </div>
      </nav>
+     <!-- Nav Style End -->
+
+     <!-- Header Banner Style Start -->
+      <section>
+        <div class="hero text-center gap-10 py-24">
+            <!-- Banner Image -->
+            <div class="hero-content flex-col lg:flex-col">
+              <img
+                src="./assets/banner.png"
+                class=" rounded-lg shadow-2xl" />
+              <div>
+                <!-- Text Content -->
+                <h1 class="lg:text-7xl text-3xl font-extrabold">A barn house of this design has a striking appearance</h1>
+                <p class="py-6 lg:text-lg text-sm">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <!-- Button -->
+                <a class="btn bg-view font-extrabold text-lg rounded-3xl">View Details
+                    <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-black py-2 px-2 text-white"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- Banner Section Style End -->
+
+       <!-- We Design Thoughtful Section Start -->
+        <section>
+            <div class="hero bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse lg:gap-64">
+                    <!-- Image Content -->
+                    <img
+                    src="./assets/Rectangle.png"
+                    class=" rounded-lg shadow-2xl hidden lg:block" />
+                  <div>
+                    <!-- Text Content -->
+                     <img class="absolute left-64" src="./assets/Vector.png" alt="">
+                     <p class=" font-semibold bg-white w-1/4 rounded-xl px-2 mb-5 mt-16"><i class="fa-solid fa-arrow-right"></i> About Us</p>
+                    <h1 class="text-5xl font-bold mb-5">We design thoughtful, liveable spaces</h1>
+                    <p class="py-6">
+                        The barn house captivates with its blend of rustic charm and 
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                    <!-- Card 1 -->
+                    <div class=" flex gap-5 bg-white rounded-xl py-5 px-5 mb-5">
+                        <img src="./assets/commercial.png" alt="">
+                        <div>
+                            <h1 class="text-lg font-bold">Commercial</h1>
+                            <p class="text-slate-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="flex gap-5 bg-white rounded-xl py-5 px-5">
+                        <img src="./assets/commercial.png" alt="">
+                        <div>
+                            <h1 class="text-lg font-bold">Commercial</h1>
+                            <p class="text-slate-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:hidden">
+                <img
+                src="./assets/Rectangle.png"
+                class=" rounded-lg shadow-2xl" />
+              <div>
+              </div>
+        </section>
+        <!-- We Design Thoughtful Section End -->
+
+
 </body>
 </html>
